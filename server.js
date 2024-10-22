@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express();
 const db = require('./db');// iska code db.js me likha h
+require('dotenv').config();
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 const Person = require('./models/person');
